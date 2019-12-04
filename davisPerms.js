@@ -3008,8 +3008,7 @@ const otherShoppings = shoppings.slice(mainActivities.shopping, numberOfActiviti
 
 const topSights = sights.slice(0, mainActivities.sights)
 const otherSights = sights.slice(mainActivities.sights, numberOfActivities.sights)
-
-console.log(JSON.stringify({
+const results = {
     museums: {
         top: topMuseums,
         other: otherMuseums
@@ -3022,4 +3021,5 @@ console.log(JSON.stringify({
         top: topSights,
         other: otherSights
     }
-}))
+}
+console.log(JSON.stringify(results))
